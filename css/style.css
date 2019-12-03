@@ -156,7 +156,6 @@ body::-webkit-scrollbar {
 
 /* PRIMEIRA SEÇÃO DO SITE */
 #section0{
-    background-image: url('../img/banner-01.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
