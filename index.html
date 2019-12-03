@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/fullpage/fullpage.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-new.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="plugins/fullpage/fullpage.js"></script>
+
+    <title>Mimos</title>
+
+    <script>
+        $(document).ready(function () {
+            document.getElementById('inicio') .click();
+        });
+
+        function menuActive(){
+            var urlAtual = window.location.href,
+                sectAtual = urlAtual.split('#');
+
+            setTimeout(function () {
+                $('#menu i').removeClass('fas').addClass('far');
+                $('.active span i').removeClass('far').addClass('fas');
+            }, 10);
+        };
+
+        $(document).scroll(function () {
+            menuActive();
+        });
+    </script>
+</head>
+<body>
+
+    <!-- <a class="logo logo-preto" href="index.html">
+        <img src="img/logo-02.png" alt="Paladino">
+    </a> -->
+    <a class="logo logo-branco" href="#">
+        <img src="img/logo-01.png" alt="Paladino">
+    </a>
+    
+    <ul id="menu">
+        <li data-menuanchor="sect01" class="active"><a id="inicio" href="#sect01" onclick="menuActive()">
+            Início
+        </a></li>
+        <li data-menuanchor="sect02"><a href="#sect02" onclick="menuActive()">
+            Quem somos
+        </a></li>
+        <li data-menuanchor="sect03"><a href="#sect03" onclick="menuActive()">
+            Adote
+        </a></li>
+        <li data-menuanchor="sect04"><a href="#sect04" onclick="menuActive()">
+            Campanhas
+        </a></li>
+        <li data-menuanchor="sect05"><a href="#sect05" onclick="menuActive()">
+            Eventos
+        </a></li>
+        <li><a href="https://www.infisio.com.br/mimos">
+            Loja
+        </a></li>
+    </ul>
+
+    <div id="fullpage">
+        <!-- Primeira seção do site - Banner -->
+        <div class="section active" id="section0">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12" style="padding:0;margin:0">
+                        <div class="carousel slide carousel-fade" id="carousel-574804" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-slide-to="0" data-target="#carousel-574804" class="active">
+                                </li>
+                                <li data-slide-to="1" data-target="#carousel-574804">
+                                </li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" style="background-image: url('img/banner-doacao.png')">
+                                    <div class="overlay">
+                                        <div class="carousel-caption">
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" style="background-image: url('img/banner-canecas.png')">
+                                    <div class="overlay">
+                                        <div class="carousel-caption">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <a class="carouse  l-control-prev" href="#carousel-574804" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-574804" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section" id="section1">
+            <div class="overlayer"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 offset-1 inf">
+                        <h4>Quem somos</h4>
+                        <strong>MISSÃO</strong><br>
+                        <p>Nosso propósito é ajudar e proporcionar uma melhor condição aos animais abandonados, com a parceria de ONGs.</p>
+
+                        <strong>VISÃO</strong> <br>
+                        <p>Nosso objetivo é ser a maior empresa no ramo das causas animais. </p>
+
+                        <strong>VALORES</strong><br>
+                        <p>Respeito, ética e transparência. Superação e resultados.</p>
+
+                        <!-- <strong>DOAÇÃO</strong><br>
+                        <p>Você também é aquele tipo de pessoa que faz tudo pelos animais? Então que tal nos ajudar nessa missão?! Os pets vão agradecer. </p>
+                        <p>Vamos doar? Nós aceitamos ração, medicamento e dinheiro. </p>
+
+                        <strong>ADOTE</strong><br>
+                        <p>É tão gostoso ter um pet ao seu lado para dar carinho, amor e muitos lambeijos. Então vamos adotar!! Vamos juntos tornar a vida de um pet melhor. </p>
+
+                        <strong>DENUNCIE</strong><br>
+                        <p>Maltrato de animais é crime!! Se você ver alguém maltratando um pet ligue para a ong da sua cidade ou acione a Polícia Civil.</p> -->
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <div class="section" id="section2">
+            <!-- é renderizado pelo script -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                            <h4>NÓS PRECISAMOS DE SUA AJUDA</h4>
+
+                        <div class="row">                                    
+                                <p>Adote, é tão gostoso ter um pet ao seu lado para dar carinho, amor e muitos lambeijos. Então vamos adotar!! Vamos juntos tornar a vida de um pet melhor. </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/Prancheta1.png">
+                                    <div class="card-body">
+                                        <p class="card-text">"Me leva pra casa?"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/Prancheta2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">"Estou te esperando"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/Prancheta3.png">
+                                    <div class="card-body">
+                                        <p class="card-text">"Vamos brincar?"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="card" style="height: 100%;">
+                                <img src="img/Prancheta4.png" style="height: 200px!important;object-position: top;">
+                                <div class="card-body">
+                                    <p class="card-text">"Quando você vem me buscar?"</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section " id="section4">
+            <div class="container">
+                <div class="row inf">
+                    <div class="col-md-12">
+                        <h4>Campanha: Eles também veem</h4>
+                        
+                        <p>Estampas inclusivas e materiais/produtos sustentáveis,<br>
+                                podendo ser utilizadas tanto pelo dono quanto pelo pet <br>  
+                                ao mesmo tempo que não agridem o planeta.</p>
+                        <p>Seguindo a linha da inclusão, todas as cores das estampas<br>
+                                estão dentro do espectro de cores que os animais conseguem<br>
+                                enxergar. </p>
+                        <p>Pensando em seguir a linha sustentável, os produtos idealizados<br>
+                                pela equipe tem como finalidade evitar ao máximo o uso de<br>
+                                plástico nos kits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section " id="section3">
+            <div class="container">
+                <div class="row inf">
+                    <div class="col-md-12">
+                        <img src="img/Pranchetalg.png">
+                    </div>
+                    <div class="col-md-12" style="margin-top:50px;">
+                        <h4>Nossos eventos</h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/doogoo.png">
+                                    <div class="card-body">
+                                        <p class="card-text">29/11</p>
+                                        <hr>
+                                        <h3>Feira de adoção</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/doogoo2.png">
+                                    <div class="card-body">
+                                        <p class="card-text">30/11</p>
+                                        <hr>
+                                        <h3>Campanha de conscientização</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="img/googoo3.png">
+                                    <div class="card-body">
+                                        <p class="card-text">01/12</p>
+                                        <hr>
+                                        <h3>Não compre, adote!</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#FA9628', '#9e2506', '#FA9628', '#ffdd00', '#d48a2f'],
+            anchors: ['sect01', 'sect02', 'sect03', 'sect04', 'sect05'],
+            menu: '#menu',
+            lazyLoad: true
+        });
+    </script>
+</body>
+</html>
